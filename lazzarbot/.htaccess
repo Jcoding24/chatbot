@@ -1,0 +1,10 @@
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/javascript "access plus 1 hour"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js)$">
+        Header set Cache-Control "must-revalidate, max-age=3600"
+    </FilesMatch>
+</IfModule>

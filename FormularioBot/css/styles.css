@@ -1,0 +1,315 @@
+/* Estilos básicos del cuerpo y la fuente */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Estilo para los encabezados */
+h2, h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los formularios */
+.form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para los botones */
+.btn-primary, .btn-danger, .btn-secondary, .btn-custom {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+/* Estilos para los elementos de la lista */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+/* Margen inferior en las secciones */
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+/* Padding en la parte superior del contenedor principal */
+.container {
+    padding-top: 20px;
+    max-width: 800px; /* Limita el ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor */
+}
+
+/* Estilo de los botones dentro de la lista */
+.list-group-item .btn {
+    margin-left: 10px;
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+textarea.form-control {
+    height: 100px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 16px;
+}
+
+/* Estilos para hacer el dashboard responsivo */
+@media (max-width: 768px) {
+    .list-group-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-group-item .form-control,
+    .list-group-item .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .list-group-item .btn {
+        margin-left: 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+    }
+
+    .container-fluid {
+        padding: 10px;
+    }
+
+    h2, h3 {
+        font-size: 1.25rem;
+    }
+
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+
+    /* Estilo vertical para la sección Administrar Usuarios */
+    .admin-user-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        border: 1px solid #dee2e6;
+        margin-bottom: 10px;
+        margin-left: auto;  /* Añadir auto margen izquierdo */
+        margin-right: auto; /* Añadir auto margen derecho */
+        max-width: 90%;     /* Limitar el ancho máximo */
+    }
+
+    .admin-user-row .form-group {
+        width: 100%;
+    }
+
+    .admin-user-row .form-group input,
+    .admin-user-row .form-group select {
+        width: 100%;
+    }
+
+    .admin-user-row .btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Estilos para el formato horizontal en pantallas grandes */
+@media (min-width: 769px) {
+    .admin-user-row {
+        display: table-row;
+    }
+
+    .admin-user-row .form-group {
+        display: table-cell;
+        padding: 10px;
+    }
+
+    .admin-user-row .form-group input,
+    .admin-user-row .form-group select {
+        width: auto;
+    }
+
+    .admin-user-row .btn {
+        width: auto;
+        margin-bottom: 0;
+    }
+}
+
+/* Estilos para el panel de login */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Estilos para el panel de administración */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table thead th {
+    white-space: nowrap;
+}
+
+.table tbody td {
+    white-space: nowrap;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+textarea.form-control {
+    height: 100px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    font-size: 16px;
+}
+
